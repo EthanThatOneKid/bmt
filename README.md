@@ -28,17 +28,17 @@ git clone
 cd bmt
 ```
 
-### Testing
-
-```bash
-deno test
-```
-
 ### Building
 
 ```bash
-deno run --reload -A examples_gen.ts
+deno task generate
 ```
+
+### Conventions
+
+The usage of `deno task fmt` and `deno task lint` is enforced by continuous integration (CI).
+
+The file responsible for enforcing these conventions is [.github/workflows/conventions.yaml](.github/workflows/conventions.yaml).
 
 ## References
 
