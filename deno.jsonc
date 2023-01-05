@@ -1,4 +1,5 @@
 {
+  "lock": "./deno.lock",
   "compilerOptions": {
     "allowJs": true,
     "lib": ["dom", "deno.window", "deno.ns", "deno.unstable"],
@@ -7,6 +8,8 @@
   "tasks": {
     "lint": "deno lint",
     "fmt": "deno fmt",
-    "generate": "deno run --reload -A ./examples_gen.ts"
+    "generate": "deno run --lock=deno.lock -A ./examples_gen.ts",
+    "udd": "deno run -r --allow-read=. --allow-write=. --allow-net https://deno.land/x/udd/main.ts deps.ts && deno task lock",
+    "lock": "deno cache --lock=deno.lock --lock-write deps.ts"
   }
 }
