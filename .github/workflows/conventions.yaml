@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  test:
+  conventions:
     runs-on: ubuntu-latest
 
     strategy:

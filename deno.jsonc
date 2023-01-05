@@ -10,6 +10,7 @@
     "fmt": "deno fmt",
     "generate": "deno run --lock=deno.lock -A ./examples_gen.ts",
     "udd": "deno run -r --allow-read=. --allow-write=. --allow-net https://deno.land/x/udd/main.ts deps.ts && deno task lock",
-    "lock": "deno cache --lock=deno.lock --lock-write deps.ts"
+    "lock": "deno cache --lock=deno.lock --lock-write deps.ts",
+    "all": "deno task lint && deno task fmt && deno task generate && deno task udd"
   }
 }
