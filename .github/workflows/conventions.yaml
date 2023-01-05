@@ -1,0 +1,27 @@
+name: conventions
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  conventions:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        deno-version: [canary]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: ${{ matrix.deno-version }}
+
+      - run: deno task lint && git diff --exit-code
+      - run: deno task fmt && git diff --exit-code
+      - run: deno task generate && git diff --exit-code
+      - run: deno task udd && git diff --exit-code
