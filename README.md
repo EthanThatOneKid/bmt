@@ -42,7 +42,7 @@ The file responsible for enforcing these conventions is [.github/workflows/conve
 
 ## References
 
-- [Bookmarklets](https://en.wikipedia.org/wiki/Bookmarklet)
+- <https://en.wikipedia.org/wiki/Bookmarklet>
 
 ---
 
