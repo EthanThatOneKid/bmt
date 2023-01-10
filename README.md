@@ -1,5 +1,7 @@
 # bmt
 
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https://deno.land/x/bmt/build/mod.ts)
+
 Tool for bundling bookmarklets in Deno.
 
 ## Usage
