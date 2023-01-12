@@ -31,6 +31,7 @@
     "https://deno.land/x/denoflate@1.2.1/pkg/denoflate_bg.wasm.js": "d581956245407a2115a3d7e8d85a9641c032940a8e810acbd59ca86afd34d44d",
     "https://deno.land/x/esbuild@v0.16.17/mod.d.ts": "f0226ff211effd61673e1a6d3f8d4bd601a0d7854f69f9c91ecbeeff21e31829",
     "https://deno.land/x/esbuild@v0.16.17/mod.js": "abf56956177f7bd0c5b49f1d00a6c793ea3b00eff3242385fd14de80d94875d1",
+    "https://deno.land/x/esbuild_plugin_http_imports@v1.2.4/index.ts": "a71e0483757a0c838bd6799c101cfe7a25513fd4a4905870b0d1d35d2ed96af3",
     "https://deno.land/x/slash@v0.3.0/mod.ts": "bac6b63a39878f394667a45121f59c8919ae8747b953a275aaf089058c031e7e"
   }
 }
