@@ -1,5 +1,5 @@
 import type { BuildOptions } from "../../deps.ts";
-import { build as esbuild } from "../../deps.ts";
+import { build as esbuild, httpImports } from "../../deps.ts";
 
 /**
  * Builds JS from a given source file.
@@ -15,6 +15,7 @@ export async function build(
     outfile: outPath,
     bundle: true,
     minify: true,
+    plugins: [httpImports()],
     ...opts,
   });
 
